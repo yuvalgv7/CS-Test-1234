@@ -78,11 +78,9 @@ ap1: flags=8922<BROADCAST,SMART,PROMISC,SIMPLEX,MULTICAST> mtu 1500
 	media: autoselect (none)
 en0: flags=8963<UP,BROADCAST,SMART,RUNNING,PROMISC,SIMPLEX,MULTICAST> mtu 1500
 	options=6460<TSO4,TSO6,CHANNEL_IO,PARTIAL_CSUM,ZEROINVERT_CSUM>
-	ether 72:ff:27:fc:bf:ab
-	inet6 fe80::1824:746c:3963:5d0b%en0 prefixlen 64 secured scopeid 0xe 
-	inet6 2a0d:6fc0:ec0:a900:c39:42e2:b73f:9699 prefixlen 64 autoconf secured 
-	inet6 2a0d:6fc0:ec0:a900:65d3:4ffb:6b86:87ec prefixlen 64 autoconf temporary 
-	inet 192.168.1.181 netmask 0xffffff00 broadcast 192.168.1.255
+	ether a2:da:07:b7:56:66
+	inet6 fe80::471:6600:5abd:2275%en0 prefixlen 64 secured scopeid 0xe 
+	inet 192.168.21.54 netmask 0xfffffe00 broadcast 192.168.21.255
 	nd6 options=201<PERFORMNUD,DAD>
 	media: autoselect
 	status: active
@@ -112,7 +110,7 @@ utun3: flags=8151<UP,POINTOPOINT,RUNNING,PROMISC,MULTICAST> mtu 1000
 	inet6 fe80::ce81:b1c:bd2c:69e%utun3 prefixlen 64 scopeid 0x15 
 	nd6 options=201<PERFORMNUD,DAD>
 utun4: flags=8151<UP,POINTOPOINT,RUNNING,PROMISC,MULTICAST> mtu 1500
-	inet 100.64.0.1 --> 100.64.0.1 netmask 0xffff0000
 	inet6 fe80::1c09:35d:53a0:c0cb%utun4 prefixlen 64 scopeid 0x16 
 	inet6 fc00::6440:1 prefixlen 112 
+	inet 100.64.0.1 --> 100.64.0.1 netmask 0xffff0000
 	nd6 options=201<PERFORMNUD,DAD>
